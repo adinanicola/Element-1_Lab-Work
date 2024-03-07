@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    background-color: #000;
+    background-image: url('https://i.pinimg.com/564x/70/4e/6b/704e6b542bfd0edcfb8d15c05ac96d52.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Starry background animation */
+@keyframes twinkling {
+    0% { background-position: 0 0; }
+    100% { background-position: -10000px 5000px; }
+}
+
+/* Styling for h1 */
+h1 {
+    font-size: 2.5rem;
+    color: #ff00cc;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(left, #ff00cc, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Styling for h2 */
+h2 {
+    font-size: 1.75rem;
+    color: #00ffaa;
+    margin-top: 2rem;
+    background: -webkit-linear-gradient(left, #00ffaa, #ff00cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+/* Links styling */
+a {
+    color: #00ffaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff00cc;
+}
+
+/* iframe styling */
+iframe {
+    border: 2px solid #ff00cc;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Glow animation for headings */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 8px #ff00cc;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffff00, 0 0 30px #ff00cc, 0 0 40px #ff00cc, 0 0 50px #ff00cc, 0 0 60px #ff00cc, 0 0 70px #ff00cc;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
