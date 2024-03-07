@@ -29,7 +29,7 @@ serial = new p5.SerialPort();
   
   // Assuming our Arduino is connected, let's open the connection to it
   // Change this to the name of your arduino's serial port
-  serial.open("/dev/tty.usbmodem101");
+  serial.open("/dev/tty.usbmodem1101");
 
   // When we connect to the underlying server
   serial.on('connected', serverConnected);
@@ -124,6 +124,7 @@ function draw() {
       map(i, 0, points.length - 1, 100, 255)
     );
     stroke(strokeColor);
+    strokeWeight(3);
 
     if (currentLength < targetLength && points.length > 1) {
       beginShape();
